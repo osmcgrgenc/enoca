@@ -143,9 +143,28 @@
                             isim@alanadi.uzanti)</div>
                         <input type="password" name="password" id="register_password" class="form-control"
                             placeholder="Şifre">
-                        <div id="register-password-valid" class="text-danger visually-hidden">Şifre hatalı</div>
-                        <input type="password" name="password_confirmation" id="register_password_confirmation"
-                            class="form-control" placeholder="Şifre Onay">
+                        <div class="form-group">
+                            <div class="input-group" id="show_hide_password">
+                                <input type="password" name="password" id="register_password" class="form-control"
+                                    aria-describedby="button-addon2" placeholder="Password">
+                                <div class="input-group-addon">
+                                    <button class="mt-0" style="height: 75%;"><i class="fa fa-eye-slash"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                            <div id="register-password-valid" class="text-danger visually-hidden">Şifre hatalı</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group" id="show_hide_password">
+                                <input type="password" name="password_confirmation" id="register_password_confirmation" class="form-control"
+                                    aria-describedby="button-addon2" placeholder="Password Confirmation">
+                                <div class="input-group-addon">
+                                    <button class="mt-0" style="height: 75%;"><i class="fa fa-eye-slash"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <button class="btn btn-dark btn-block" onclick="register()">Üye Ol
 
                         </button>
